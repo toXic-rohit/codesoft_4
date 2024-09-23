@@ -1,0 +1,36 @@
+"""
+take input from  user
+computer takes a random choice from 3
+print result
+
+
+"""
+
+import random
+
+item_list=["Rock","paper","scissor"]
+
+user_choice=input("Enter your choice: Rock,Paper,scissor \n")
+comp_chioce= random.choice(item_list)
+
+print(f"your choice is: {user_choice}\ncomputer has choosen {comp_chioce}")
+
+if user_choice == comp_chioce:
+    print("Both have same choices: It's a tie")
+elif user_choice == "rock":
+    if comp_chioce == "paper":
+        print("YOU LOOSE")
+    else:
+        print(" YOU WON!!!")
+elif user_choice == "scissor":
+    if comp_chioce == "paper":
+        print("YOU WON")
+    else:
+        print(" YOU loose!!!")
+else:
+    user_choice == "paper"
+    if comp_chioce == "scissor":
+        print("YOU LOOSE")
+    else:
+        print(" YOU WON!!!")
+
